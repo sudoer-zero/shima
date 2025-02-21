@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hikari/pages/account.dart';
 import 'package:hikari/pages/dashboard.dart';
 import 'package:hikari/pages/flashcards.dart';
+import 'package:hikari/utils/colors.dart';
 
 void main() {
   runApp(const DashboardPage());
@@ -25,8 +26,8 @@ class DashboardPage extends StatelessWidget {
             ],
           ),
           bottomNavigationBar: const TabBar(
-            labelColor: Colors.black,
-            unselectedLabelColor: Colors.grey,
+            labelColor: AppColors.slate900,
+            unselectedLabelColor: AppColors.slate600,
             indicatorSize: TabBarIndicatorSize.label,
             indicatorColor: Colors.black,
             tabs: [
